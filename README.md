@@ -2,7 +2,6 @@
 
 [![Version](https://img.shields.io/cocoapods/v/SBLApplication.svg?style=flat)](http://cocoapods.org/pods/SBLApplication)
 [![License](https://img.shields.io/cocoapods/l/SBLApplication.svg?style=flat)](http://cocoapods.org/pods/SBLApplication)
-[![Platform](https://img.shields.io/cocoapods/p/SBLApplication.svg?style=flat)](http://cocoapods.org/pods/SBLApplication)
 
 ## Example
 
@@ -39,11 +38,32 @@ UIApplicationMain(
 
 and then remove `@UIApplicationMain` from your `AppDelegate`.
 
+To enable touch indicator, you may need to cast an instance of `UIApplication` to `SBLApplication`:
+
+```swift
+import UIKit
+import SBLApplication
+
+class AppDelegate: UIResponder {
+  // ... snip ...
+  func application(_ application: UIApplication,
+                   didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    if let app = application as? SBLApplication {
+      app.isShowingTouchIndicators = true
+    }
+    return true
+  }
+  // ... snip ...
+}
+```
+
 ## Copyright
 
 [SBLApplication](https://github.com/takkyun/SBLApplication) is developed by Takuya Otani / SimpleBoxes.
 
-Copyright (c) 2012 [SerendipityNZ](http://serendipitynz.com/) Ltd. 
+Copyright (c) 2017 Takuya Otani 
+
+Copyright (c) 2017 [SerendipityNZ](http://serendipitynz.com/) Ltd. 
 
 ## License
 
