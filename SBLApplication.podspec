@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SBLApplication'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'Application base class to support displaying touch indicators.'
   s.description      = <<-DESC
 `SBLApplication` works as a base class of application, in other words, it is an alternative of `UIApplication`.
