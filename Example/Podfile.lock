@@ -1,0 +1,16 @@
+PODS:
+  - SBLApplication (0.0.1)
+
+DEPENDENCIES:
+  - SBLApplication (from `../`)
+
+EXTERNAL SOURCES:
+  SBLApplication:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SBLApplication: 07b2f995e1c4ebeb4100ea26d135204d627521cd
+
+PODFILE CHECKSUM: 93bec4db61c6889db3c576bd391470f75a11f146
+
+COCOAPODS: 1.2.0
